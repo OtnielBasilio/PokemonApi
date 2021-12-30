@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+span{
+    text-transform: capitalize;
+    text-align: center;
+    padding: auto;
+    
+  }
+
+
+body{
+  background-color:white;
+  margin-left: 100px auto;
+  
+  width: auto;
+}
+
+h2{
+  margin-top: 20px;
+}
+.PokemonContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+  border: black;
+  .card {
+    width: 150px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 16px;
+    box-shadow: 1px 1px 5px black;
+    margin: 5px;
+    background-color: white;
+
+    p{
+      text-transform: capitalize;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    
+   .typePokemon {
+    text-transform: capitalize;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 2px 2px;
+  }
+  }
+}
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  text-align:center;
+  font-size: 16px;
+  width: 140px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}.button:hover {
+  background-color: yellow;
+}

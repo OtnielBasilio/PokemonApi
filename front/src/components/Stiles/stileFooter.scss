@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.Footer{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+.datos{
+justify-content: center;
+align-items: center;
+color: white;
+    font-family: 'Merriweather', serif;
+
+}
+.Pokebola{
+width: 100px;
+height: 100px;
+}
+
+.group{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    margin: auto;
+    padding: 22px;
+    justify-content: center;
+    align-items: center;
+}

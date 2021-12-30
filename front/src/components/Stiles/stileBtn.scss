@@ -1,0 +1,77 @@
+.fContainer , .fbtn ,.fmenu{
+    position: absolute;
+}
+.fContainer{
+    margin: auto;
+    top: 100% ;
+    left: 88%;
+}
+#fcheck{
+    display: none;
+}
+
+#fcheck:checked ~ .fmenu{
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+#fcheck:checked ~ .fbtn{
+    transform: rotate(135deg);
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.fbtn{
+    z-index: 999;
+    width: 42px;
+    height: 42px;
+    background-color: yellow;
+    border-radius: 100%;
+    transition: all .5s ease-in-out;
+    box-shadow: 1px 3px 10px 0px;
+    cursor: pointer;
+}
+.fbtn::before{
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: blue;
+    transform: rotate(90deg);
+}
+.fbtn::after{
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: blue;
+}
+.fmenu{
+    transform: translateY(-10%);
+    opacity: 0;
+    top: 13px;
+    left: -50px;
+    transition: all .5s ease-in-out;
+    background: gainsboro;
+    width: 150px;
+    border-radius: 5px;
+    transform: translateY(0%);
+    box-shadow: 1px 3px 10px 0px;
+}
+
+.fmenu a{
+   text-align: center;
+   display: block;
+   margin: 20px 0;
+   color: black;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+.fmenu a:hover{
+    color: blue;
+ }
+ 
